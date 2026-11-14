@@ -1,15 +1,17 @@
 # AI Trading Desk — perfis da equipa
 
-Exportação dos perfis atualmente configurados no OpenBot, preparada para consulta e reutilização noutro computador.
+Exportação da equipa AI Trading Desk atualmente configurada no OpenBot, preparada para consulta e recriação noutro computador.
 
 ## Conteúdo
 
 - `agents/`: instruções por agente, em Markdown.
 - `PROJECT.md`: âmbito, sequência de trabalho, controlos e limitações conhecidas.
+- `openbot-manifest.json`: nomes, modelos, nível de raciocínio, permissões, ferramentas e agrupamento atuais.
+- `RECREATE.md`: instruções de configuração manual.
 
 ## Importante
 
-Este repositório contém prompts/instruções, não uma aplicação pronta para negociar. Não inclui código de estratégia, instalação/configuração Freqtrade, ligação à Bybit, credenciais, dados de conta nem automatização dos controlos descritos. Os perfis não criam por si só bloqueios técnicos de ordens. Para usar noutro OpenBot, cria os agentes e cola o conteúdo dos respetivos ficheiros no campo de instruções; permissões, integrações, rotinas e aprovações devem ser configuradas separadamente.
+O OpenBot não fornece importação de agentes a partir deste manifesto. O repositório é um pacote de recriação manual, não uma cópia instantânea do ambiente. Não contém histórico/conversas, IDs locais dos agentes, código de estratégia, instalação/configuração Freqtrade, ligação à Bybit, credenciais nem dados de conta. Também não automatiza os controlos descritos. Segue `RECREATE.md` para configurar os agentes.
 
 Mantém este repositório privado. Nunca guardes chaves API, segredos, ficheiros de configuração privados ou dados pessoais nele.
 
